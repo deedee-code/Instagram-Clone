@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,6 +25,7 @@
     margin: 30px 50px 30px 10px;
     align-items: center;
     cursor: pointer;
+    display: flex;
 }
 
 .fa {
@@ -68,6 +69,66 @@
     width: 70%;
     padding: 0px;
     margin-left: 17rem;
+}
+
+.content {
+    background-color: #f5f3f3;
+    width: 80%;
+    height: 100vh;
+    margin-left: 17rem;
+    text-align: center;
+}
+
+.content h3 {
+    margin-top: 50vh;
+}
+
+.content h2 {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.content .input-content {
+    margin-top: 20vh;
+    margin-left: 30%;
+    background-color: white;
+    width: 450px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+
+.content .search-content {
+    width: 400px;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: none;
+    outline: none;
+}
+
+.content-button button {
+    color: blue;
+    font-size: 20px;
+}
+
+.fa-images {
+    font-size: 20px;
+}
+
+.content form {
+    margin: 5vh 30%;
+}
+
+.content-post {
+    padding: 10px;
+    background-color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 header {
@@ -142,7 +203,6 @@ header {
 .usercard {
     display: flex;
     align-items: center;
-    /* border-bottom: #545454; */
 }
 
 .follow {
@@ -258,6 +318,29 @@ form input {
 .usercard a {
     text-decoration: none;
     color: rgb(25, 25, 112);
+}
+
+#profile {
+    margin-top: 30px;
+}
+
+#profile img {
+    height: 300px;
+    border-radius: 50px;
+}
+
+.profiledetails {
+    border: 1px solid gray;
+    width: 400px;
+    margin: 20px 330px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.profile-info {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #suggestion {

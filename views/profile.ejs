@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram-Clone</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link
+      rel="icon"
+      href="https://pngimg.com/uploads/instagram/instagram_PNG3.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <nav class="navbar">
+        <h3>Instagram-Clone</h3>
+
+        <div class="nav_main">
+          <i class="fa-solid fa-house"></i>
+          <a href="./home"><button>Home</button></a>
+        </div>
+        <div class="nav_main">
+          <i class="fa fa-magnifying-glass"></i>
+          <a href="./search"><button>Search</button></a>
+        </div>
+        <div class="nav_main">
+          <i class="fa-regular fa-compass"></i>
+          <a href="./explore"><button>Explore</button></a>
+        </div>
+        <div class="nav_main">
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <a href="./message"><button>Messenges</button></a>
+        </div>
+        <div class="nav_main">
+          <i class="fa-regular fa-heart"></i>
+          <a href="./notification"><button>Notifications</button></a>
+        </div>
+        <div class="nav_main">
+          <i class="fa-solid fa-square-plus"></i>
+          <a href="./create-post"><button>Create</button></a>
+        </div>
+        <div class="nav_main">
+          <img src="<%= user.profilePicture %>" alt="Profile" />
+          <a href="./profile"><button>Profile</button></a>
+        </div>
+      </nav>
+
+      <div class="content">
+        <div class="profilecard">
+          <div id="profile">
+            <img src="<%= user.profilePicture %>" alt="user image" />
+            <div class="profiledetails">
+              <div class="profile-info">
+                <p>Name:</p>
+                <p class="username"><%= user.name %></p>
+              </div>
+              <div class="profile-info">
+                <p>Email:</p>
+                <p class="username"><%= user.email %></p>
+              </div>
+              <div class="profile-info">
+                <p>Username:</p>
+                <p class="username">@<%= user.username %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

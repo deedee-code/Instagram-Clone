@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram-Clone</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="icon"
+      href="https://pngimg.com/uploads/instagram/instagram_PNG3.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Login</h1>
+
+      <i class="fa-brands fa-instagram"></i>
+
+      <div class="content">
+        <% if (messages.success && messages.success.length) { %>
+        <div>
+          <% messages.success.forEach(message => { %>
+          <li style="color: blue"><%= message %></li>
+          <% }); %>
+        </div>
+        <% } %> <% if (messages.error && messages.error.length) { %>
+        <div>
+          <% messages.error.forEach(message => { %>
+          <li style="color: red"><%= message %></li>
+          <% }); %>
+        </div>
+        <% } %>
+        <form action="/login" method="POST">
+          <input type="text" placeholder="username" name="username" />
+          <input type="password" placeholder="password" name="password" />
+          <input class="form-submit" type="submit" value="Log In" />
+        </form>
+        <span
+          >Don't have an account ?
+          <a href="/" class="text-blue-500">Sign Up</a></span
+        >
+      </div>
+    </main>
+  </body>
+</html>
