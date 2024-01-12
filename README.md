@@ -59,7 +59,7 @@ MONGO_URI=MONGO_URI_HERE
 ```
 
 
-### Here is the hosted link: https://instagram-clone-8r32.onrender.com
+### Here is the hosted link: https://insta-clone-s9bn.onrender.com
 
 **Dummy Login details**
 ```js
